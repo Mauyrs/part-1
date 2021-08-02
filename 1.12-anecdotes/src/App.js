@@ -36,7 +36,7 @@ const App = () => {
   const [selected, setSelected] = useState(0)
   const [votes, setVotes] = useState(new Array(anecdotes.length).fill(0));
 
-
+// el "..." no devuelve un array/objeto sino que devuelve sus valores destructurados
   const mostVotedIndex = votes.indexOf(Math.max(...votes));
   console.log(mostVotedIndex)
 
